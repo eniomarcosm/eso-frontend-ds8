@@ -9,13 +9,13 @@
 // All SASS variables from the base theme are also included here. Do not use the '!default' flag
 // here if you want to override them.
 
-
 /*** FONT FAMILIES ***/
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap");
 
-$font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
+$font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 /*** SEMANTIC COLOR SCHEME ***/
 
@@ -47,7 +47,6 @@ $font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI"
 // Define or override other colors here
 // ...
 
-
 // Modificado
 
 // Override semantic colors here
@@ -55,50 +54,46 @@ $font-family-sans-serif: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI"
 //$secondary: #495057;  // As Bootstrap $gray-700
 // $dark:      #43515f;  // Gray
 
-$primary:   #F2B604;  // Gray
-$secondary: #987817;  // As Bootstrap $gray-700
-$success:   #92c642;  // Lime
-$info:      #1e6f90;  // Light blue
-$warning:   #ec9433;  // Orange
-$danger:    #cf4444;  // Red
-$light:     #f8f9fa;  // As Bootstrap $gray-100
-$dark:      #43515f;  // Gray
+$primary: #1a73e8; // Gray
+$secondary: #0f4ea1; // As Bootstrap $gray-700
+$success: #92c642; // Lime
+$info: #1e6f90; // Light blue
+$warning: #ec9433; // Orange
+$danger: #cf4444; // Red
+$light: #f8f9fa; // As Bootstrap $gray-100
+$dark: #43515f; // Gray
 
 // Add new semantic colors here (you don't need to add existing semantic colors)
-$theme-colors: (
-  // ...
-);
-
+$theme-colors: ();
 
 /*** OTHER BOOTSTRAP VARIABLES ***/
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 170;
 
-$body-color: #343a40;       // As Bootstrap $gray-800
+$body-color: #343a40; // As Bootstrap $gray-800
 
 // Modificado
 // $link-color: #1e6f90 ;
-       // Blue green, as DSpace $info
-$link-color: #7F6004 ;       // Blue green, as DSpace $info
+// Blue green, as DSpace $info
+$link-color: #0f4ea1; // Blue green, as DSpace $info
 $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
-$table-accent-bg: #f8f9fa;  // As Bootstrap $gray-100
-$table-hover-bg: #ced4da;   // As Bootstrap $gray-400
+$table-accent-bg: #f8f9fa; // As Bootstrap $gray-100
+$table-hover-bg: #ced4da; // As Bootstrap $gray-400
 
 $navbar-dark-color: #fff;
-
 
 /*** CUSTOM DSPACE VARIABLES ***/
 
 // Modificado
-$ds-home-news-link-color: #F2B604;
-$ds-header-navbar-border-bottom-color: #F2B604;
+$ds-home-news-link-color: #1a73e8;
+$ds-header-navbar-border-bottom-color: #0f4ea1;
 
 // $ds-breadcrumb-link-color: #154E66 !default;
 // $ds-breadcrumb-link-active-color: #040D11 !default;
 
-$ds-breadcrumb-link-color: #7F6004 !default;
-$ds-breadcrumb-link-active-color: #513f0c !default;
+$ds-breadcrumb-link-color: #1a73e8 !default;
+$ds-breadcrumb-link-active-color: #0f4ea1 !default;

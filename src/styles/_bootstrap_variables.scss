@@ -12,7 +12,6 @@
 // All SASS variables that are declared must have the '!default' flag, otherwise it won't be possible
 // to override them in custom themes.
 
-
 /*** FONT FAMILIES AND FONT SIZES ***/
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
@@ -23,47 +22,43 @@ $h4-font-size: $font-size-base * 1.25 !default;
 $h5-font-size: $font-size-base * 1.125 !default;
 $h6-font-size: $font-size-base !default;
 
-
 /*** BOOTSTRAP OPTIONS ***/
 
 // enable-responsive-font-sizes allows text to scale more naturally across device and viewport sizes
 $enable-responsive-font-sizes: true !default;
 $enable-shadows: true !default;
 
-
 /*** SEMANTIC COLOR SCHEME ***/
 
 // Override semantic colors
-$primary:   #2b4e72 !default;               // Blue gray
-$secondary: #495057 !default;               // As Bootstrap $gray-700
-$success:   #94ba65 !default;               // Lime
-$info:      #006666 !default;               // Blue green
-$warning:   #ec9433 !default;               // Orange
-$danger:    #cf4444 !default;               // Red
-$light:     #f8f9fa !default;               // As Bootstrap $gray-100
-$dark:      darken(#2b4e72, 17%) !default;  // Blue gray (darker)
-
+$primary: #2b4e72 !default; // Blue gray
+$secondary: #495057 !default; // As Bootstrap $gray-700
+$success: #94ba65 !default; // Lime
+$info: #006666 !default; // Blue green
+$warning: #ec9433 !default; // Orange
+$danger: #cf4444 !default; // Red
+$light: #f8f9fa !default; // As Bootstrap $gray-100
+$dark: darken(#2b4e72, 17%) !default; // Blue gray (darker)
 
 /*** OTHER BOOTSTRAP VARIABLES ***/
 
-$link-color: #1F7293 !default;
+$link-color: #1f7293 !default;
 $link-hover-color: darken($link-color, 15%) !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold: 165 !default;
 
-$navbar-dark-color: rgba(white, .5) !default;
-$navbar-light-color: rgba(black, .5) !default;
+$navbar-dark-color: rgba(white, 0.5) !default;
+$navbar-light-color: rgba(black, 0.5) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,<svg+viewBox='0+0+30+30'+xmlns='http://www.w3.org/2000/svg'><path+stroke='#{$navbar-dark-color}'+stroke-width='2'+stroke-linecap='round'+stroke-miterlimit='10'+d='M4+7h22M4+15h22M4+23h22'/></svg>") !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,<svg+viewBox='0+0+30+30'+xmlns='http://www.w3.org/2000/svg'><path+stroke='#{$navbar-light-color}'+stroke-width='2'+stroke-linecap='round'+stroke-miterlimit='10'+d='M4+7h22M4+15h22M4+23h22'/></svg>") !default;
-
 
 /*** CUSTOM DSPACE VARIABLES ***/
 
 $ds-home-news-link-color: $link-color !default;
 $ds-home-news-link-hover-color: darken($ds-home-news-link-color, 15%) !default;
 $ds-breadcrumb-link-color: #003333 !default;
-$ds-breadcrumb-link-active-color: #040D11 !default;
+$ds-breadcrumb-link-active-color: #040d11 !default;
 
 $ds-header-navbar-border-top-color: #fff !default;
 $ds-header-navbar-border-bottom-color: #ced4da !default;
@@ -78,15 +73,17 @@ $ds-expandable-navbar-bg: #fff !default;
 $ds-navbar-link-color: $link-color !default;
 $ds-navbar-link-color-hover: #{darken($ds-navbar-link-color, 15%)} !default;
 
-$ds-slider-color: darken(#94BA65, 17%) !default;
-$ds-slider-handle-color: darken(#2B4E72, 17%) !default;
+$ds-slider-color: darken(#94ba65, 17%) !default;
+$ds-slider-handle-color: darken(#2b4e72, 17%) !default;
 
-$ds-admin-sidebar-bg: darken(#2b4e72, 17%) !default;
+// Modificado
+$ds-admin-sidebar-bg: darken(#0d448e, 17%) !default;
 $ds-admin-sidebar-active-bg: darken($ds-admin-sidebar-bg, 3%) !default;
 $ds-admin-sidebar-fg: #47495d !default;
 $ds-admin-sidebar-fixed-element-width: 55px !default;
 $ds-admin-sidebar-collapsible-element-width: 250px !default;
-$ds-admin-sidebar-total-width: $ds-admin-sidebar-fixed-element-width + $ds-admin-sidebar-collapsible-element-width; // do not change/override
+$ds-admin-sidebar-total-width: $ds-admin-sidebar-fixed-element-width +
+  $ds-admin-sidebar-collapsible-element-width; // do not change/override
 
 $ds-primary-bg: #{lighten($primary, 30%)} !default;
 $ds-secondary-bg: #{lighten($secondary, 30%)} !default;
@@ -94,7 +91,6 @@ $ds-success-bg: #{lighten($success, 30%)} !default;
 $ds-info-bg: #{lighten($info, 30%)} !default;
 $ds-warning-bg: #{lighten($warning, 30%)} !default;
 $ds-danger-bg: #{lighten($danger, 30%)} !default;
-
 
 /*** MISC ***/
 
