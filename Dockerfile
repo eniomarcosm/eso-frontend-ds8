@@ -11,11 +11,8 @@ WORKDIR /app
 ADD . /app/
 EXPOSE 4000
 
-RUN npm install
+RUN npm install --legacy-peer-deps
 
-# When running in dev mode, 4GB of memory is required to build & launch the app.
-# This default setting can be overridden as needed in your shell, via an env file or in docker-compose.
-# See Docker environment var precedence: https://docs.docker.com/compose/environment-variables/envvars-precedence/
 ENV NODE_OPTIONS="--max_old_space_size=4096"
 
 # On startup, run in DEVELOPMENT mode (this defaults to live reloading enabled, etc).
